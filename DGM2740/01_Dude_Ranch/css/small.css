@@ -12,7 +12,8 @@ body {
 
 /* Header rules here */
 header {
-    background-color: #17a8e4;
+    background-color: #054a68;
+    color: #eee;
     padding: 1rem 2%;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
 }
 
@@ -27,10 +28,10 @@ header h1 {
 }
 
 /* Navigation rules here */
-nav {background-color: #111;}
+nav {background-color: rgb(48, 48, 48);}
 nav ul {margin: 0; padding: 0;}
 nav li {list-style-type: none;}
-nav li.active {background-color: #333;}
+nav li.active {background-color: rgb(71, 71, 71);}
 
 nav a {
     display: block;
@@ -48,7 +49,7 @@ main {
     display: block;
 }
 
-main h1 {color: #17a8e4;}
+main h1 {color: #054a68;}
 
 main figure img {width: 100%;}
 
@@ -62,6 +63,7 @@ main figcaption {text-align: center; font-size: .8rem;}
 /* Footer rules here */
 footer {
     text-align:center;
+    color: #eee;
     padding: 1rem 2%;
-    background-color: #17a8e4;
+    background-color: #054a68;
 }
