@@ -1,0 +1,145 @@
+/* .container {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr; /* 1 fraction of the available space */
+  /*   grid-template-rows: 50px 1fr 1fr 100px; /* top and bottom rows are fixed heights */
+
+   /*  gap: 10px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+} */
+
+html {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    background-color: pink;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+nav li a {
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+#column {
+    width: 1280px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: aquamarine;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#headerAndP {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.imgAndHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkgoldenrod;
+    justify-content: space-between;
+}
+
+#imgAndHeaderLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: darkgreen;
+    text-align: center;
+    align-items: center;
+}
+
+#imgAndHeaderRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: darksalmon;
+    text-align: center;
+    align-items: center;
+}
+
+#bottomRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: darkseagreen;
+    text-align: center;
+    align-items: center;
+}
+
+#bottomLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: greenyellow;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    max-height: 646px;
+    max-width: 464px;
+}
+
+footer {
+    height: 490px;
+    background-color: #FB7852;
+}
