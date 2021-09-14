@@ -12,8 +12,8 @@ body {
 
 /* Header rules here */
 header {
-    background-color: #fff;
-    color:  #2B0E05;
+    background-color: #054a68;
+    color: #eee;
     padding: 1rem 2%;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
 }
 
@@ -28,17 +28,16 @@ header h1 {
 }
 
 /* Navigation rules here */
-nav {background-color: #fff;}
+nav {background-color: rgb(48, 48, 48);}
 nav ul {margin: 0; padding: 0;}
 nav li {list-style-type: none;}
-/* nav li.active {background-color:} */
+nav li.active {background-color: rgb(71, 71, 71);}
 
 nav a {
-   /*  display: block; */
-    /* padding: .8rem; /* 44min height */ 
-    color: rgba(121, 112, 110, 1);
-    /* text-align: center; */
-    justify-content: right;
+    display: block;
+    padding: .8rem; /* 44min height */
+    color: #eee;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -61,40 +60,10 @@ main figure {
 
 main figcaption {text-align: center; font-size: .8rem;}
 
-div.mobile {
-    display: flex;
-    justify-content: right;
-}
-
-div.opportunites {
-    display: flex;
-    justify-content: middle;
-}
-
-div.clients {
-    display: flex;
-    justify-content: left;
-}
-
-div.powerful {
-    display: flex;
-    justify-content: right;
-}
-
-div.campaign {
-    display: flex;
-    justify-content: left;
-}
-
-div.business {
-    display: flex;
-    justify-content: middle;
-}
-
 /* Footer rules here */
 footer {
     text-align:center;
     color: #eee;
     padding: 1rem 2%;
-    background-color: #FB7852;
+    background-color: #054a68;
 }
