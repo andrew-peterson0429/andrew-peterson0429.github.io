@@ -405,11 +405,26 @@ body {
   font-weight: 300; }
 
 /* Header rules here */
-div#headerWrapper {
-  background-color: #e4c517; }
+#logo {
+  display: flex;
+  justify-content: flex-start; }
 
+#logoTxt {
+  width: 300px;
+  margin-left: 2%; }
+
+/* div #headerWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: $primaryColor;
+} */
 header {
-  background-color: #e4c517;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #2c2e61;
   color: #eee;
   padding: 1rem 2%;
   /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
@@ -430,7 +445,7 @@ div #navWrapper {
   background-color: #303030; }
 
 nav {
-  background-color: #303030;
+  background-color: #301274;
   /* End of a */ }
   nav ul {
     margin: 0;
@@ -445,9 +460,17 @@ nav {
     text-align: center;
     text-decoration: none; }
   nav a:hover {
-    background-color: #444; }
+    background-color: #74CBDF;
+    color: #13072F; }
 
 /* End of nav */
+/* Hero image rules here */
+#hero {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center; }
+
 /* Main rules here */
 div #mainWrapper {
   background-color: red; }
@@ -459,7 +482,7 @@ main {
   /* End of h1 */
   /* End of figure */ }
   main h1 {
-    color: #e4c517;
+    color: #2c2e61;
     font-weight: 700;
     margin: 0; }
   main figure img {
@@ -474,9 +497,10 @@ main {
 /* End of main */
 /* Footer rules here */
 div #footerWrapper {
-  background-color: #e4c517; }
+  background-color: #2c2e61; }
 
 footer {
+  background-color: #2c2e61;
   text-align: center;
   color: #eee;
   padding: 1rem 2%; }

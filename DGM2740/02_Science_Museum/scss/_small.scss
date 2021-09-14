@@ -12,11 +12,29 @@ body {
 }
 
 /* Header rules here */
-div#headerWrapper {
-    background-color: $primaryColor;
+#logo {
+    display: flex;
+    justify-content: flex-start;
 }
 
+#logoTxt {
+    width: 300px;
+    margin-left: $gutter;
+    
+}
+
+/* div #headerWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: $primaryColor;
+} */
+
 header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
     background-color: $primaryColor;
     color: #eee;
     padding: 1rem $gutter;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
@@ -43,7 +61,7 @@ div #navWrapper {
 }
 
 nav {
-    background-color: rgb(48, 48, 48);
+    background-color: #301274;
     ul {margin: 0; padding: 0;}
     li {list-style-type: none;}
     a {
@@ -54,10 +72,20 @@ nav {
         text-decoration: none;
     } /* End of a */
     
-    a:hover {background-color: #444;}
+    a:hover {
+        background-color: #74CBDF;
+        color: $secondaryColor;
+    }
 
 } /* End of nav */
 
+/* Hero image rules here */
+#hero {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
 
 /* Main rules here */
 div #mainWrapper {
@@ -91,6 +119,7 @@ div #footerWrapper{
 }
 
 footer {
+    background-color: $primaryColor;
     text-align:center;
     color: #eee;
     padding: 1rem $gutter;
