@@ -6,6 +6,14 @@ nav ul {padding-left: $gutter;}
 nav ul li {flex-basis: auto;}
 nav a {padding: .5rem 1rem;}
 
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#hero {
+    margin-bottom: $gutter;
+}
 
 main figure {width: 31%;}
 

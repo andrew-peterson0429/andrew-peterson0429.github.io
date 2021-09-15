@@ -36,7 +36,7 @@ header {
     justify-content: left;
     align-items: center;
     background-color: $primaryColor;
-    color: #eee;
+    color: $textColor;
     padding: 1rem $gutter;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
     h1 {
         margin: 0;
@@ -64,6 +64,9 @@ nav {
     background-color: #301274;
     ul {margin: 0; padding: 0;}
     li {list-style-type: none;}
+    li.active {
+        background-color: #40707a;
+    }
     a {
         display: block;
         padding: .8rem; /* 44min height */
@@ -81,20 +84,24 @@ nav {
 
 /* Hero image rules here */
 #hero {
-    display: flex;
     width: 100%;
     height: auto;
-    justify-content: center;
+}
+
+#hero img{
+    width: 100%;
+    height: auto;
+    /* margin: 0 $gutter 0 $gutter; */
 }
 
 /* Main rules here */
 div #mainWrapper {
-    background-color: red;
+    
 }
 
 main {
     background-color: white;
-    padding: 1rem $gutter;
+    padding: 0 $gutter;
     display: block;
     h1 {
         color: $primaryColor;
@@ -121,7 +128,7 @@ div #footerWrapper{
 footer {
     background-color: $primaryColor;
     text-align:center;
-    color: #eee;
+    color: $textColor;
     padding: 1rem $gutter;
     
 }

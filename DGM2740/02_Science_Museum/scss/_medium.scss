@@ -3,6 +3,13 @@
 nav ul {display: flex;}
 nav ul li {flex-basis: 25%;}      /* because 4 items / 4 = 25% for nav bar */
 
+
+/* Hero image rules here */
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
 main figure {
     float: right;
     width: 50%;
