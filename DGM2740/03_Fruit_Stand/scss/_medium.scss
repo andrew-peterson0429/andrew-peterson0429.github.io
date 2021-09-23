@@ -1,0 +1,40 @@
+
+
+nav ul {display: flex;}
+nav ul li {flex-basis: 25%;}      /* because 4 items / 4 = 25% for nav bar */
+
+
+/* Header rules here */
+#logoTxt h1 {
+    font-size: 1.8rem;
+}
+
+#logoTxt h2 {
+    font-size: 1.5rem;
+}
+
+/* Main rules here */
+
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imageGallery figure {
+    flex-basis: 46%;
+}
+
+#imageGallery figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* div.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+
+} */
+
+
+ /* end of media query */

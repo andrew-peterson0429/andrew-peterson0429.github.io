@@ -1,0 +1,114 @@
+/* Tells the box sizing to follow the box size protocal. */
+* { -moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/* Prevents the phones from trying to enlarge the font between portrait and landscape modes */
+/* html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} */
+
+/* Body rules here */
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-weight: $regularWeight;
+}
+
+/* Header rules here */
+
+
+#logoTxt {
+    margin-top: 1.5rem;  
+}
+
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    color: $textColor;
+    padding: 1rem $gutter;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: $heavyWeight; 
+    } /* End of h1 */
+    
+    h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: $regularWeight;
+        
+    } /* End of h2 */
+
+
+    
+} /* End of header */
+
+
+
+/* Navigation rules here */
+div #navWrapper {
+    background-color: rgb(48, 48, 48);
+}
+
+nav {
+    background-color: #301274;
+    ul {margin: 0; padding: 0;}
+    li {list-style-type: none;}
+    li.active {
+        background-color: #40707a;
+    }
+    a {
+        display: block;
+        padding: .8rem; /* 44min height */
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+    } /* End of a */
+    
+    a:hover {
+        background-color: #74CBDF;
+        color: $secondaryColor;
+    }
+
+} /* End of nav */
+
+/* Main rules here */
+
+main {
+    background-color: white;
+   /*  padding: 0 $gutter; */
+    /* display: flex;
+    height: auto; */
+    h1 {
+        color: $primaryColor;
+        font-weight: $heavyWeight;
+        margin: 0;
+    } /* End of h1 */
+
+   #imageGallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #imageGallery figure {
+        flex-basis: 96%;
+        margin: 1rem 2%;
+    }
+
+    #imageGallery figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {text-align: center; font-size: .8rem;}
+
+
+} /* End of main */
+
+
+
+/* Footer rules here */
+footer {
+    background-color: $primaryColor;
+    text-align:center;
+    color: $textColor;
+    padding: 1rem $gutter;  
+}
+ /* End of footer */
