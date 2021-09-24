@@ -1,7 +1,6 @@
 
+nav li {width: 25%; float: left;}
 
-nav ul {display: flex;}
-nav ul li {flex-basis: 25%;}      /* because 4 items / 4 = 25% for nav bar */
 
 
 /* Header rules here */
@@ -13,28 +12,13 @@ nav ul li {flex-basis: 25%;}      /* because 4 items / 4 = 25% for nav bar */
     font-size: 1.5rem;
 }
 
-/* Main rules here */
 
-#imageGallery {
-    display: flex;
-    flex-wrap: wrap;
+
+/* -------------- Main styles here ---------------- */
+
+
+div.familyGallery figure {
+    flex-basis: 29%;
+    
 }
 
-#imageGallery figure {
-    flex-basis: 46%;
-}
-
-#imageGallery figure img {
-    width: 100%;
-    height: auto;
-}
-
-/* div.news {
-    clear: both;
-    column-count: 2;
-    column-rule: 1px solid #ddd;
-
-} */
-
-
- /* end of media query */

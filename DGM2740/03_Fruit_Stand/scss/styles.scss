@@ -4,25 +4,10 @@
 
 @import "small";
 
-
-/* min-width around 36rem */
-
-/* 35rem is also 560px with a basefont of 16px */
-@media only screen and (min-width: 35rem) {
-    @import "small";
-   
-}
-
-@media only screen and (min-width: 63rem) {
+@media only screen and (min-width: 35rem) {         /* Equal to 560px */
     @import "medium";
-   
-}
+} /* end of media query */
 
-
-/* end of media query */
-
-@media only screen and (min-width: 72rem) {
+@media only screen and (min-width: 60rem) {        /* Equal to 960px */
     @import "large";
-}
-
-/* end of media query */
+} /* end of media query */

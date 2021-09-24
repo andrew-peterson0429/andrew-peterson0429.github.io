@@ -1,15 +1,15 @@
-/* Tells the box sizing to follow the box size protocal. */
-* { -moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;}
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-/* Prevents the phones from trying to enlarge the font between portrait and landscape modes */
-/* html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} */
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* Body rules here */
+/* body rules */
 body {
-    font-family: $fontFamily;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: $regularWeight;
 }
+
 
 /* Header rules here */
 
@@ -21,94 +21,82 @@ body {
 header {
     display: grid;
     grid-template-columns: 100px auto;
-    color: $textColor;
-    padding: 1rem $gutter;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
-    h1 {
-        margin: 0;
-        font-size: 1.5rem;
-        font-weight: $heavyWeight; 
-    } /* End of h1 */
-    
-    h2 {
-        margin: 0;
-        font-size: 1.2rem;
-        font-weight: $regularWeight;
-        
-    } /* End of h2 */
-
-
-    
+    color: $secondaryColor;
+    padding: 1rem;              /* 1 rem = base font * 1. Base font is 16, so 1 rem = 16px */
+ 
 } /* End of header */
 
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700; 
+} /* End of h1 */
 
-
-/* Navigation rules here */
-div #navWrapper {
-    background-color: rgb(48, 48, 48);
-}
-
-nav {
-    background-color: #301274;
-    ul {margin: 0; padding: 0;}
-    li {list-style-type: none;}
-    li.active {
-        background-color: #40707a;
-    }
-    a {
-        display: block;
-        padding: .8rem; /* 44min height */
-        color: #eee;
-        text-align: center;
-        text-decoration: none;
-    } /* End of a */
+h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
     
-    a:hover {
-        background-color: #74CBDF;
-        color: $secondaryColor;
-    }
+} /* End of h2 */
 
-} /* End of nav */
 
-/* Main rules here */
+
+nav {background-color: $menuColor;}
+nav ul{margin:0; padding: 0;}
+nav li {
+    list-style-type: none;
+    background-color: darken($menuColor, 10%);
+}
+nav li.active {background-color: darken($menuColor, 20%);}
+nav a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover {background-color: lighten($menuColor, 20%);}
+
+
+
+/* -------------- Main styles here ---------------- */
 
 main {
-    background-color: white;
-   /*  padding: 0 $gutter; */
-    /* display: flex;
-    height: auto; */
-    h1 {
-        color: $primaryColor;
-        font-weight: $heavyWeight;
-        margin: 0;
-    } /* End of h1 */
+    min-height: 10rem;
+}
 
-   #imageGallery {
-        display: flex;
-        flex-wrap: wrap;
-    }
+h1 {
+    margin-top: $gutter;
+}
 
-    #imageGallery figure {
-        flex-basis: 96%;
-        margin: 1rem 2%;
-    }
+div.familyGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    #imageGallery figure img {
-        width: 100%;
-        height: auto;
-    }
+div.familyGallery figure {
+    flex-basis: 46%;
+    margin: 1rem 2%;
+}
 
-    figcaption {text-align: center; font-size: .8rem;}
+div.familyGallery figure img {
+    width: 100%;
+}
 
 
-} /* End of main */
+/* main figcaption {text-align: center; font-size: .8rem;} */
 
 
-
-/* Footer rules here */
 footer {
     background-color: $primaryColor;
-    text-align:center;
-    color: $textColor;
-    padding: 1rem $gutter;  
+    text-align: center;
+    padding: 1rem 2%;
 }
- /* End of footer */
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
