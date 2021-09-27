@@ -1,0 +1,39 @@
+
+
+#buttonTop {
+    
+    width: 339px;
+    height: 48px;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-size: $smallFontSize;
+    font-weight: 700;
+    background-color: $mainColor;
+    border-style: none;
+}
+
+#buttonBottom {
+    width: 339px;
+    height: 48px;
+    border-radius: 16px;
+    color: $mainColor;
+    font-size: $smallFontSize;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: $mainColor;
+    border-width: 3px;
+}
+
+#buttonFooter {
+    width: 280px;
+    height: 48px;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-size: $smallFontSize;
+    font-weight: 700;
+    background-color: $mainColor;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 3px;
+}

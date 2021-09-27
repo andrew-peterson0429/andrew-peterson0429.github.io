@@ -1,0 +1,33 @@
+$mainFontFamily: 'Nunito Sans', sans-serif;
+
+$secondaryFontFamily: 'Open Sans', sans-serif;
+
+$mainColor: #FB7852;
+
+$textColor: #79706E;
+
+$mediumHeaderFontSize: 38px;
+
+$smallFontSize: 18px ;
+
+$speed: 350ms;
+
+// Mixins
+
+@mixin largeImgs {
+    width: 646px;
+    height: 464px;
+
+}
+
+@mixin mediumImgs {
+    width: 100%;
+}
+
+@mixin flex-Col-Center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+

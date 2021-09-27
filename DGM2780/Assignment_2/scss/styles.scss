@@ -1,0 +1,21 @@
+@import "normalize";
+
+@import "variables";
+
+@import "small";
+
+@import "buttons";
+
+@import "nav";
+
+@media only screen and (min-width: 35rem) {         /* Equal to 560px */
+    @import "medium";
+} /* end of media query */
+
+@media only screen and (min-width: 60rem) {        /* Equal to 960px */
+    @import "large";
+} /* end of media query */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
