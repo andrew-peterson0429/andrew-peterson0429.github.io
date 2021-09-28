@@ -459,7 +459,8 @@ main {
   min-height: 10rem; }
 
 h1 {
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-left: 2%; }
 
 div.familyGallery {
   display: flex;
