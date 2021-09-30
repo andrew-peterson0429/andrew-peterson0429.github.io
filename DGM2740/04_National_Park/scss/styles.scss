@@ -1,5 +1,7 @@
 @import "normalize";
 
+@import "variables";
+
 @import "small";
 
 @media only screen and (min-width: 35rem) {   /* same as 560px */
@@ -9,3 +11,4 @@
 @media only screen and (min-width: 60rem) {   /* same as 960px */
     @import "large";
 } /* end of media query */
+
