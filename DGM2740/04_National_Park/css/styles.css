@@ -329,15 +329,17 @@ header {
   color: white; }
 
 header h1 {
-  margin: 0; }
+  margin: 0;
+  text-shadow: 0 0 2px black; }
 
 header h2 {
   margin: 0;
-  font-weight: normal; }
+  font-weight: normal;
+  text-shadow: 0 0 2px black; }
 
 /*----------- NAVIGATION --------------*/
 #navWrapper {
-  background-color: #666; }
+  background-color: #4c3e31; }
 
 nav ul {
   list-style-type: none;
@@ -350,9 +352,9 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  background-color: #444;
+  background-color: #5a4a3b;
   color: #eee;
-  border-left: 1px solid #777;
+  border-left: 1px solid #77624f;
   padding: .5rem 0;
   text-decoration: none;
   font-size: .9rem;
@@ -366,26 +368,88 @@ nav ul li a:hover {
   color: #333; }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #58788f;
   color: #fff; }
 
 /*----------- MAIN --------------*/
 #mainWrapper {
-  background-color: red; }
+  background-color: none; }
 
 main {
-  background-color: white;
+  background-color: #f1f1f1;
   padding: 0 2%;
   min-height: 10rem; }
   main h1 {
     margin: 0;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    color: #2d3135; }
+  main .cardHolder {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none; }
+  main .card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    flex-basis: 100%;
+    margin: 1rem 1%;
+    text-align: center; }
+    main .card h3 {
+      background-color: none;
+      color: #fff;
+      text-shadow: 0 0 4px black;
+      padding: 1rem 0; }
+    main .card a {
+      display: block;
+      width: 100%;
+      height: 300px;
+      text-decoration: none;
+      color: white;
+      padding: 0 2%;
+      transition: all .5s ease-in; }
+    main .card :hover img {
+      animation: bounce 1s 1; }
+    main .card img {
+      position: relative;
+      width: 100px;
+      height: auto; }
+@keyframes bounce {
+  0% {
+    bottom: 0px;
+    animation-timing-function: ease-out; }
+  25% {
+    bottom: 20px;
+    animation-timing-function: ease-in; }
+  50% {
+    bottom: 0px;
+    animation-timing-function: ease-out; }
+  75% {
+    bottom: 10px;
+    animation-timing-function: ease-in; }
+  100% {
+    bottom: 0px; } }
+    main .card #card1 {
+      background-image: url("/DGM2740/04_National_Park/images/bus.jpg");
+      background-repeat: no-repeat;
+      border-radius: 10px; }
+    main .card #card2 {
+      background-image: url("/DGM2740/04_National_Park/images/tour.jpg");
+      background-repeat: no-repeat;
+      border-radius: 10px; }
+    main .card #card3 {
+      background-image: url("/DGM2740/04_National_Park/images/resturant.jpg");
+      background-repeat: no-repeat;
+      border-radius: 10px; }
+    main .card #card4 {
+      background-image: url("/DGM2740/04_National_Park/images/accomidation.jpg");
+      background-repeat: no-repeat;
+      border-radius: 10px; }
 
 /*----------- FOOTER --------------*/
 #footerWrapper {
-  background-color: #ddd; }
+  background-color: #5a4a3b; }
 
 footer {
+  color: #fff;
   padding: .5rem 2%;
   text-align: center; }
 
@@ -420,6 +484,9 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
+  main .card {
+    flex-basis: 48%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -438,5 +505,8 @@ footer {
 
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .card {
+    flex-basis: 23%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */

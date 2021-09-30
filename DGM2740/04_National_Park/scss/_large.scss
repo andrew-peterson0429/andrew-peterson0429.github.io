@@ -22,7 +22,11 @@ header, nav, main, footer {
 
 
 /*----------- MAIN --------------*/
-
+main {
+        .card {
+            flex-basis: 23%;
+        }
+    }
 
 
 /*----------- FOOTER --------------*/
