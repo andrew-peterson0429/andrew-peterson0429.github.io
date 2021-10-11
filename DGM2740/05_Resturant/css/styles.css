@@ -373,7 +373,7 @@ nav ul li.active a {
 main {
   padding: 0 2%;
   min-height: 10rem; }
-  main h1 {
+  main h2 {
     color: #293753; }
   main .heroImg img, main .founderPhoto img {
     width: 100%; }
