@@ -8,17 +8,25 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: #bd4a42;
+    background-image: url(/DGM2740/06_Band/images/headerImg.jpg);
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+header h2 {
+    margin: 0; 
+    font-weight: normal;
+    color: #fff;
+}
 
 /*----------- NAVIGATION --------------*/
 div #navWrapper {
@@ -39,9 +47,9 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: #444;
+    background-color: #4f1c18;
     color: #eee;
-    border-left: 1px solid #777;
+    border-left: 1px solid #421714;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -54,7 +62,7 @@ nav ul li a:hover {
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: #b44331;
     color: #fff;
 }
 
@@ -82,31 +90,20 @@ div.bandMembers figure {
 figure.myround {
     img {
         float: right;
-        shape-outside: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        /* shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); */
+        shape-outside: circle(100% at 100% 0%);
+        clip-path: circle(100% at 100% 0%);
         margin: .5rem;
     }
 } // End of myround
 
 figure.myarc {
     img {
-        float: right;
-        shape-outside: circle(100% at 100% 0%);
-        clip-path: circle(100% at 100% 0%);
-        margin: .5rem;
-    }
-} // End of myarc
-
-figure.mytriangle {
-    img {
         float: left;
-        shape-outside: polygon(0 0, 100% 50%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 0 100%);
+        shape-outside: circle(100% at 0% 100%);
+        clip-path: circle(100% at 0% 100%);
         margin: .5rem;
-    }
-
-    p {
-
     }
 } // End of myarc
 
@@ -119,10 +116,34 @@ figure.myplay {
     }
 } // End of myarc
 
+figure.mytriangle {
+    img {
+        float: right;
+        /* shape-outside: polygon(0 0, 100% 0, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 0 100%); */
+        shape-outside: polygon(0 0, 100% 0, 100% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        margin: .5rem;
+    }
+} // End of myarc
+
+div.theGallery div {
+    width: 100%;
+    height: 0;
+    padding-bottom: 65%;
+    position: relative;
+}
+
+div.theGallery div img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: #4f1c18;
+    color: #fff;
     padding: .5rem 2%;
     text-align: center;
 }
