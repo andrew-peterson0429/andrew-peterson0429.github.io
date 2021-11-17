@@ -14,11 +14,17 @@ body {
 
 /*----------- HEADER --------------*/
 header {
+    display: flex;
+    align-items: flex-end;
     padding: .5rem 2%;
     background-color: #ddd;
 }
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
+
+#search {
+    
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -59,11 +65,21 @@ main {
     min-height: 10rem;
 }
 
-
 /*----------- COLUMNS --------------*/
 div.flexed {
     display: flex;
     flex-wrap: wrap;
+}
+
+div.flexed-evenly {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.column {
+    padding: 0 $gutter;
 }
 
 @for $i from 1 through 12 {
@@ -71,13 +87,55 @@ div.flexed {
     .small-#{$i} {flex-basis: $w;}
 } // end loop
 
+.jumbotron {
+    background-color: $accent;
+    color: white;
+    p {
+        font: 200%;
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
+
+.lawyers {
+    justify-content: center;
+    text-align: center;
+    margin-top: 1vh;
+    padding: 0 1px 1px 0;
+}
+
+.blog-posts {
+    background-color: $accent;
+}
+
+.social {
+    text-align: center;
+    font-size: 2rem;
+    background-color: $accent;
+    a {
+        color: white;
+        display: block;
+        padding: 1rem 0;
+    }
+    a:hover {color: $primaryColor;}
+}
+
+.empty-space {
+    background-color: #fff;
+    color: white;
+};
+
+.gutter {
+    margin-top: $gutter;
+}
+
+
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
 }
-
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
