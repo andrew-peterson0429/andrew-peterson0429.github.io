@@ -26,10 +26,6 @@
             justify-content: space-evenly;
         }
 
-        /* nav {
-            background-color: #666;
-        } */
-
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -47,6 +43,8 @@
         nav ul li a {
             display: inline-block;
             color: #fff;
+            width: 106px;
+            height: 42px;
             padding: .5rem 0;
             text-decoration: none;
             font-size: 12px;
@@ -109,14 +107,39 @@
             width: auto;
         }
 
-        .custom-lg-img-div {
-            margin: 2rem 0 2rem 0;
+        .img-divs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .img-divs img {
+            width: 277px;
+            height: auto;
+        }
+
+        .img-divs p {
+            color: #fff;
+            text-align: center;
+        }
+
+        .row-top-bottom {
+            margin-top: 2rem;
+        }
+
+        .row-margin-bottom {
+            margin-bottom: 2rem;
         }
 
         .custom-button-divs {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .custom-btn-color {
+            background-color: #F16535;
         }
 
         .custom-home-button {
@@ -126,6 +149,11 @@
 
         .margin-bottom {
             margin-bottom: 2rem;
+        }
+        
+        .modal-body img {
+            width: 300px;
+            height: auto;
         }
 
     </style>
@@ -161,76 +189,90 @@
                 <li><a href="#">Accessories</a></li>
                 <li><a href="#">Animatronics</a></li>
                 <li><a href="/DGM2780/Assignment_3/decorations.html">Decorations</a></li>
-                <li><a href="/DGM2780/Assignment_3/costumes.html">Costumes</a></li>
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="/DGM2780/Assignment_3/costumes.html">Costumes</a></li>
+                <li><a href="/DGM2780/Assignment_3/index.html">Home</a></li>
             </ul>
         </nav>
     </div>
 
-
-    <!-------------------------------- MAIN CONTENT DIV -------------------------------->
-    <div class="container justify-content-center align-items-center">
-        
-        <div class="row custom-lg-img-div width-auto"> 
-            <img src="/DGM2780/Assignment_3/images/happy-halloween.png" alt="Happy Halloween Banner">
-        </div>
-
-        <!-------------------------------- BUTTON -------------------------------->
+    <div class="container">
         <div class="row custom-button-divs">
-            <button type="button" class="btn btn-primary custom-home-button">SHOP MOST POPULAR ITEMS</button>
+            <button type="button" class="btn btn-primary custom-home-button" data-bs-toggle="modal" data-bs-target="#exampleModal">This Weeks Most Popular Costume</button>
         </div>
+    </div>
+    
 
 
-        <!-------------------------------- IMAGE COLUMNS -------------------------------->
-        <div class="row margin-bottom justify-content-center">
-            <div class="col-sm-6 col-md-6 col-lg-6 width-auto">
-                <img src="/DGM2780/Assignment_3/images/chucky.png" alt="Chucky Costumes">
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 width-auto">
-                <img src="/DGM2780/Assignment_3/images/feel-the-beat.png" alt="Marsh Mellow Costumes">
-            </div>
-        </div>
-
-
-        <!-------------------------------- LARGE IMG DIV -------------------------------->
-        <div class="row margin-bottom width-auto">
-            <img src="/DGM2780/Assignment_3/images/hocus-pocus.png" alt="Hocus Pocus Costumes">
-        </div>
-
-        <!-------------------------------- IMAGE COLUMNS -------------------------------->
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6 col-lg-6 width-auto">
-                <img src="/DGM2780/Assignment_3/images/masks.png" alt="Masks">
+    <div class="container img-divs">
+        <div class="row row-margin-bottom row-top-bottom">
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/costumeThemes.jpg" alt="Costume Themes">
+                <p>Costume Themes</p>
             </div>
 
-            <div class="col-sm-6 col-md-6 col-lg-6 width-auto">
-                <img src="/DGM2780/Assignment_3/images/clown.png" alt="Clown Masks and Prop Weapons">
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/boysCostumes.jpg" alt="Boys Costumes">
+                <p>Boys Costumes</p>
+            </div>
+
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/girlsCostumes.jpg" alt="Girls Costumes">
+                <p>Girls Costumes</p>
             </div>
         </div>
 
-        <!-------------------------------- BUTTON -------------------------------->
-        <div class="row">
-            <button type="button" class="btn btn-primary custom-home-button">SHOP ALL CATEGORIES</button>
-        </div>
-        
-        <!-------------------------------- LARGE IMG DIV -------------------------------->
-        <div class="row custom-lg-img-div">
-            <img src="/DGM2780/Assignment_3/images/enter-to-win.png" alt="Enter to Win Sweepstakes">
+        <div class="row row-margin-bottom">
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/toddlerCostumes.jpg" alt="Toddler Costumes">
+                <p>Toddler Costumes</p>
+            </div>
+
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/babyCostumes.jpg" alt="Baby Costumes">
+                <p>Baby Costumes</p>
+            </div>
+
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/womensCostumes.jpg" alt="Womens Costumes">
+                <p>Womens Costumes</p>
+            </div>
         </div>
 
-        <div class="row">
-            <nav class="navbar-background-none margin-bottom">
-                <ul>
-                    <li><a href="#">Costumes</a></li>
-                    <li><a href="#">Decorations</a></li>
-                    <li><a href="#">Animatronics</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Themes</a></li>
-                    <li><a href="/DGM2780/Assignment_3/onsale.html">On Sale</a></li>
-                    <li class="active"><a href="#">Home</a></li>
-                </ul>
-            </nav>
+        <div class="row row-margin-bottom">
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/mensCostumes.jpg" alt="Mens Costumes">
+                <p>Mens Costumes</p>
+            </div>
+
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/plusSizedCostumes.jpg" alt="Plus Sized Costumes">
+                <p>Plus Sized Costumes</p>
+            </div>
+
+            <div class="col-sm-2 col-md-2 col-lg-4">
+                <img src="/DGM2780/Assignment_3/images/couplesCostumes.jpg" alt="Couples Costumes">
+                <p>Couples Costumes</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">This Weeks Most Popular Costume</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="/DGM2780/Assignment_3/images/boysCostumes.jpg" alt="Clown">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary custom-btn-color">Add to Cart</button>
+            </div>
         </div>
     </div>
     
