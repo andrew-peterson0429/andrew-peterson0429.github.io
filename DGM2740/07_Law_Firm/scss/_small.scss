@@ -50,7 +50,8 @@ header {
         height: 36px;
         border-radius: 5px 0 0 5px;
         outline: none;
-        color: #9DBFAF;
+        color: black;
+
       }
       
       .searchTerm:focus{
@@ -75,6 +76,10 @@ header {
           width: 30%;
         }
 } // end of header
+
+.hidden {
+    display: none;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -150,7 +155,15 @@ div.flexed {
 
 .blog-card {
     background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    h3 {
+        padding: .5rem;
+    }
+
+    p {
+        padding: .5rem;
+    }
 }
 
 button {
@@ -181,6 +194,10 @@ figure {
 .faq {
     background-color: #ddd;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    h3 {
+        padding: .5rem;
+    }
 
     p {
         padding: .5rem;

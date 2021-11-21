@@ -326,7 +326,7 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-  background-color: #eee;
+  background-color: #aaaaaa;
   padding: 1rem 0.5vw; }
   header h1 {
     margin: 0;
@@ -342,20 +342,20 @@ header {
     display: flex; }
   header .searchTerm {
     width: 100%;
-    border: 3px solid #454a50;
+    border: 3px solid #3a3f44;
     border-right: none;
     padding: 5px;
     height: 36px;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: #9DBFAF; }
+    color: black; }
   header .searchTerm:focus {
     color: #fff; }
   header .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #454a50;
-    background: #454a50;
+    border: 1px solid #3a3f44;
+    background: #3a3f44;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -366,9 +366,12 @@ header {
     float: right;
     width: 30%; }
 
+.hidden {
+  display: none; }
+
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #454a50; }
+  background-color: #3a3f44; }
   nav ul {
     margin: 0;
     padding: 0;
@@ -439,7 +442,7 @@ div.flexed {
   flex-basis: 100%; }
 
 .jumbotron {
-  background-color: #454a50;
+  background-color: #3a3f44;
   color: white; }
   .jumbotron p {
     font: 200%;
@@ -454,9 +457,13 @@ div.flexed {
 .blog-card {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .blog-card h3 {
+    padding: .5rem; }
+  .blog-card p {
+    padding: .5rem; }
 
 button {
-  background-color: #454a50;
+  background-color: #3a3f44;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -464,7 +471,7 @@ button {
   margin: 1rem; }
 
 .action-button {
-  background-color: #454a50;
+  background-color: #3a3f44;
   color: #fff;
   text-align: center;
   padding: 1vw; }
@@ -479,13 +486,15 @@ figure {
 .faq {
   background-color: #ddd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .faq h3 {
+    padding: .5rem; }
   .faq p {
     padding: .5rem; }
 
 /*----------- FOOTER --------------*/
 footer {
   display: flex;
-  background-color: #454a50;
+  background-color: #3a3f44;
   padding: 1rem 0.5vw; }
   footer a {
     flex-basis: 25%;
