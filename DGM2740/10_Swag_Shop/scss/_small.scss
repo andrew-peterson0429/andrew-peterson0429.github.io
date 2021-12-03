@@ -232,6 +232,8 @@ form label.top input:required:valid {
 /*----------- FOOTER --------------*/
 footer {
     background-color: $primaryColor;
+    height: 100px;
+    padding: 3rem;
     color: #fff;
     text-align: center;
 }
