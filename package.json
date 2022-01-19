@@ -1,0 +1,14 @@
+{
+  "name": "cup_cake_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/input.css -o ./dist/output.css"
+  },
+  "keywords": [],
+  "author": "Andrew Peterson",
+  "devDependencies": {
+    "tailwindcss": "^3.0.8"
+  }
+}
