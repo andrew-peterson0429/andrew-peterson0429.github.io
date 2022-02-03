@@ -1,0 +1,231 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body, html {
+    font-family: $mainFont;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+header {
+
+    h1 {
+        padding: 10px;
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-left: 10px;
+    }
+
+}
+
+#largeHeader {
+    display: none;
+}
+
+nav {
+    
+    background-color: $primaryColor;
+
+    button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #fff;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li a {
+        display: block;
+        padding: .8rem 2%;
+        text-decoration: none;
+        color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        max-height: 44px;
+    }
+
+    ul li.active a {
+        background-color: #00000033;
+        color: #fff;
+    }
+
+    ul li a:hover {
+        background-color: #00000066;
+    }
+
+    ul.hide {
+        display: none;
+    }
+}
+
+#flexedNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+
+    #searchBar {
+        width: 100px;
+    }
+    #searchBtn {
+        background-color: $menuColor;
+        width: 50px;
+        margin-left: none;
+    }
+}
+
+/* #top {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 23px;
+} */
+
+.logo {
+    margin-left: .5rem;
+}
+
+main {
+    display: block; 
+    /* padding: 1rem $gutter; */
+}
+
+#articles {
+    margin-left: 1rem;
+}
+
+figcaption {
+    text-align: center; 
+    font-size: .8rem;
+    color: #fff;
+}
+
+div.familyGallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+div.familyGallery figure {
+    flex-basis: 46%;
+    margin: 1rem 2%;
+}
+
+div.familyGallery figure img {
+    width: 100%;
+}
+
+.card {
+    background-color: #414141;
+}
+
+.sml {
+    width: 25px;
+}
+
+
+picture {
+    position: relative;
+}
+
+picture div {
+    position: absolute;
+    bottom: 0;
+}
+
+
+div a {
+    display: block;
+    width: 100%;
+    height: 256px;
+    text-decoration: none;
+    padding: 10% 2%;
+    transition: all .5s ease-in;
+    color: white;
+}
+
+div a:hover {
+    background: none;
+    text-shadow: 0 0 4px;
+}
+
+footer {
+    div.flexed {
+        display: flex; 
+        flex-wrap: wrap; 
+        padding: 0;
+        padding-top: 10px; 
+        margin:10px 0;
+        justify-content: center;
+    }
+
+    .column {
+        padding: 0 $gutter;
+    }
+    
+    color: #fff;
+
+    background-color: $primaryColor;
+    
+    text-align: center;
+   
+    padding: 1rem $gutter;
+    
+    input[type=email] {
+        width: 100%;
+        height: 2em;
+    }
+    
+    input[type=submit] {
+        border: none;
+        border-radius: 6px;
+        width: 100%;
+        margin-top: 1rem;
+        height: 2em;
+        background-color: $menuColor;
+        color: #fff;
+    }
+    
+    #social {
+        display: flex;
+        width: 100%;
+    }
+     
+    a {
+        flex-basis: 25%;
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+    }
+        
+     a:hover {
+        color: $menuColor;
+    }
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
