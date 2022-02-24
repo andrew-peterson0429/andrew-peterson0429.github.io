@@ -82,4 +82,70 @@
         background-color: $primaryColor;
     }
     
+
+    /*----- Cruise Page -----*/
+
+    .cruise-cards {
+        display: flex;
+        flex-direction: column;
+        /* columns: 100px 2; */
+    }
+
+    .cruise-card-img {
+        width: 250px;
+    }
+
+    
+
+    .cruise-card {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cruise-card-btn-flexed {
+        display: flex;
+        justify-content: end;
+    }
+
+    .cruise-card-btn {
+        background-color: $primaryColor;
+        border: none;
+        color: #fff;
+        border-radius: 20px;
+        width: 25%;
+        padding: 10px;
+    }
+
+
+    /*----- Agent Page -----*/
+
+    .agent-info {
+        display: flex;
+        flex-direction: column;
+        margin: none;
+    }
+
+    .agent-contact {
+        display: flex;
+        flex-direction: row;
+        padding: none;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+
+        .agent-img {
+            display: flex;
+            order: 1;
+        }
+
+        .agent-details {
+            justify-content: left;
+        }
+    }
+
+
 } /*end medium */

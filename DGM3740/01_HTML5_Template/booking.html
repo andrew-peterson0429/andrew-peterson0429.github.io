@@ -39,10 +39,10 @@
 <div class="full-width-nav">
     <nav class="clearfix" >
     <ul id="primaryNav" class="hide">
-        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="/DGM3740/01_HTML5_Template/index.html">HOME</a></li>
         <li><a href="/DGM3740/01_HTML5_Template/cruises.html">CRUISES</a></li>
-        <li><a href="#">AGENTS</a></li>
-        <li><a href="#">BOOK</a></li> 
+        <li class="active"><a href="/DGM3740/01_HTML5_Template/agent.html">AGENTS</a></li>
+        <li><a href="/DGM3740/01_HTML5_Template/booking.html">BOOK</a></li> 
     </ul>
     <div id="flexedNav">
         <div>
@@ -71,29 +71,44 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <div class="my_slider" id="myCards">
-            <picture>
-                <source srcset="/DGM3740/01_HTML5_Template/images/cruise-ship1-small.jpg" media="(max-width: 560px)"><img src="/DGM3740/01_HTML5_Template/images/cruise-ship1-large.jpg" alt="Cruise ship">
-            </picture>
-            <picture>
-                <source srcset="/DGM3740/01_HTML5_Template/images/cruise-ship2-small.jpg" media="(max-width: 560px)"><img src="/DGM3740/01_HTML5_Template/images/cruise-ship2-large.jpg" alt="Cruise ship">
-            </picture>
-            <picture>
-                <source srcset="/DGM3740/01_HTML5_Template/images/cruise-ship3-small.jpg" media="(max-width: 560px)"><img src="/DGM3740/01_HTML5_Template/images/cruise-ship3-large.jpg" alt="Cruise ship">
-            </picture>
-            <picture>
-                <source srcset="/DGM3740/01_HTML5_Template/images/cruise-ship4-small.jpg" media="(max-width: 560px)"><img src="/DGM3740/01_HTML5_Template/images/cruise-ship4-large.jpg" alt="Cruise ship">
-            </picture>
-        </div>
+        <h1>Book a Cruise</h1>
 
-        <h2 id="articles">Recent Blog Articles</h2>
-
-        <div class="familyGallery">
-            <figure class="card"><img src="/DGM3740/01_HTML5_Template/images/room.jpg" alt="SSd"><figcaption>May 1, 2018</figcaption></figure>
-            <figure class="card"><img src="/DGM3740/01_HTML5_Template/images/room.jpg" alt="Keyboard"><figcaption>May 1, 2018</figcaption></figure>
-            <figure class="card"><img src="/DGM3740/01_HTML5_Template/images/room.jpg" alt="Thinkpad"><figcaption>May 1, 2018</figcaption></figure>
-            <figure class="card"><img src="/DGM3740/01_HTML5_Template/images/room.jpg" alt="Chair"><figcaption>May 1, 2018</figcaption></figure>
-        </div>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="top">Full Name<input type="text" name="fname" required></label>
+                <label class="top">Address Line<input type="text" name="address" placeholder="1235556789" required></label>
+                <label class="top">City<input type="text" name="city" placeholder="someone@gmail.com"></label>
+                <label class="top">State
+                    <select name="state">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                        <option value="pink">Pink</option>
+                    </select>
+                </label>
+                <label class="top">Zipcode<input type="text" name="fname" required></label>
+                <label class="top">Phone Number<input type="text" name="phone" placeholder="1235556789" required></label>
+                <label class="top">Email Address<input type="text" name="email" required></label>
+                <label class="top">Cruise Selection
+                    <select name="cruise">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                        <option value="pink">Pink</option>
+                    </select>
+                </label>
+            </fieldset>
+    
+            <input class="submitBtn" type="submit" value="Book My Cruise">
+        </form>
+    
 
     </main>
 

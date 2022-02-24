@@ -556,6 +556,140 @@ footer {
   footer a:hover {
     color: #72bad3; }
 
+/*----- Cruise Page -----*/
+.cruise-cards {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.cruise-card {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.cruise-card-btn-flexed {
+  display: flex;
+  justify-content: center; }
+
+.cruise-card-btn {
+  background-color: #2e81af;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  width: 90%;
+  padding: 10px; }
+
+/*----- Agent Page -----*/
+.agent-h1 {
+  margin-left: 2%; }
+
+.agent-info {
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.agent-contact img {
+  max-width: 100%;
+  max-height: 400px; }
+
+/*----- Booking Page -----*/
+form fieldset {
+  margin: 2rem 0;
+  border: none;
+  padding: .5rem; }
+
+form legend {
+  color: #2e81af;
+  margin: 0 1rem;
+  padding: 0 .5rem; }
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #000000;
+  font-size: .8rem; }
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+form label.sbs {
+  display: block;
+  padding-top: .75rem;
+  color: #555; }
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; }
+
+.container:hover input ~ .checkmark {
+  background-color: #d3d3d3; }
+
+.container input:checked ~ .checkmark {
+  background-color: #2e81af; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.container input:checked ~ .checkmark:after {
+  display: block; }
+
+.container .checkmark:after {
+  background: white;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; }
+
+form input.submitBtn {
+  background-color: #2e81af;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  /* padding-top: .75rem 1.5rem; */
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  height: 50px;
+  max-width: 20rem; }
+
+form label.top input:required {
+  border-left: red solid 6px; }
+
+form label.top input:required:valid {
+  border-left: green solid 6px; }
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
@@ -849,7 +983,53 @@ footer {
     flex-basis: 100%; }
 
   .full-width-footer {
-    background-color: #2e81af; } }
+    background-color: #2e81af; }
+
+  /*----- Cruise Page -----*/
+  .cruise-cards {
+    display: flex;
+    flex-direction: column;
+    /* columns: 100px 2; */ }
+
+  .cruise-card-img {
+    width: 250px; }
+
+  .cruise-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+
+  .cruise-card-btn-flexed {
+    display: flex;
+    justify-content: end; }
+
+  .cruise-card-btn {
+    background-color: #2e81af;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    width: 25%;
+    padding: 10px; }
+
+  /*----- Agent Page -----*/
+  .agent-info {
+    display: flex;
+    flex-direction: column;
+    margin: none; }
+
+  .agent-contact {
+    display: flex;
+    flex-direction: row;
+    padding: none; }
+    .agent-contact img {
+      width: auto;
+      height: auto; }
+    .agent-contact .agent-img {
+      display: flex;
+      order: 1; }
+    .agent-contact .agent-details {
+      justify-content: left; } }
 @media only screen and (min-width: 560px) {
   /*end medium */ }
 /* end of media query */
