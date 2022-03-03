@@ -561,7 +561,8 @@ footer {
   display: flex;
   flex-direction: column;
   margin-left: 2%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  margin-bottom: 4rem; }
 
 .cruise-card {
   margin-top: 15px;
@@ -585,7 +586,8 @@ footer {
 
 .agent-info {
   margin-left: 2%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  margin-bottom: 4rem; }
 
 .agent-contact img {
   max-width: 100%;
@@ -617,7 +619,7 @@ form label.top input, form label.top select {
   padding: .75rem;
   color: #555;
   width: 100%;
-  max-width: 20rem;
+  max-width: 30rem;
   background-color: rgba(0, 0, 0, 0.1); }
 
 form label.sbs {
@@ -679,10 +681,10 @@ form input.submitBtn {
   border: none;
   border-radius: 1rem;
   /* padding-top: .75rem 1.5rem; */
-  margin: 0 0 2rem 2%;
+  margin: 0 0 2rem 1%;
   width: 96%;
   height: 50px;
-  max-width: 20rem; }
+  max-width: 30rem; }
 
 form label.top input:required {
   border-left: red solid 6px; }
