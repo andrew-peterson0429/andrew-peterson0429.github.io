@@ -580,6 +580,9 @@ footer {
   width: 90%;
   padding: 10px; }
 
+.cruise-card-img {
+  width: 100%; }
+
 /*----- Agent Page -----*/
 .agent-h1 {
   margin-left: 2%; }
@@ -591,7 +594,7 @@ footer {
 
 .agent-contact img {
   max-width: 100%;
-  max-height: 400px; }
+  max-height: auto; }
 
 /*----- Booking Page -----*/
 form fieldset {
@@ -994,7 +997,8 @@ form label.top input:required:valid {
     /* columns: 100px 2; */ }
 
   .cruise-card-img {
-    width: 250px; }
+    width: 250px;
+    margin-right: 10px; }
 
   .cruise-card {
     display: flex;
