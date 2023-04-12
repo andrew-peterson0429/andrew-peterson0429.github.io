@@ -2,87 +2,338 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andrew Peterson's Personal Portfolio</title>
-    <link rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    <title>Andrew Peterson's Portfolio</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&family=Source+Sans+Pro:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/2a595af684.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav id="navbar">
-      <ul class="nav-list">
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section id="welcome-section">
-      <h1>Andrew Peterson</h1>
-      <h3>-Aspiring Web Developer-</h3>
-    </section>
-    <section id="projects" class="projects-section">
-      <h2>My Projects</h2>
-      <br>
-      <div class="projects-grid">
-        <a href="/DGM2740/index.html" target="_blank" class="project-tile">
-          <img class="project-image" src="/" />
-          <p class="project-title">DGM 2740</p>
-        
-          <a href="/DGM2780/index.html" target="_blank" class="project-tile">
-            <img class="project-image" src="/" />
-            <p class="project-title">DGM 2780</p>
-
-            <a href="/DGM3740/01_HTML5_Template/index.html" target="_blank" class="project-tile">
-              <img class="project-image" src="/" />
-              <p class="project-title">DGM 3740</p>
-
-            <a href="/DGM3760/index.html" target="_blank" class="project-tile">
-              <img class="project-image" src="/" />
-              <p class="project-title">DGM 3760</p>
-
+    <header>
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/images/logo.png" alt="logo" />
+        </a>
       </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#service" class="nav-link">My Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#work" class="nav-link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section-title section-title-intro">
+        Hey, I am <strong>Andrew Peterson</strong>
+      </h1>
+      <p class="section-subtitle section-subtitle-intro">Web Developer</p>
+      <img
+        src="/images/andrew.jpg"
+        alt="A picture of Andrew Peterson"
+        class="intro-img"
+      />
     </section>
-    <section id="contact" class="contact-section">
-      <h2>Contact</h2>
-      <div class="contact-links">
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section-title section-title-services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Web Design & Development</h3>
+
+          <p>
+            I understand the entire creative process of designing a website.
+            From the designs I create, I am able to translate and develop them
+            into functioning and responsive code.
+          </p>
+        </div>
+        <!-- End of service -->
+
+        <div class="service">
+          <h3>Content Management</h3>
+
+          <p>
+            I have knowledge in WordPress, Shopify, WIX and Omni. No matter what
+            content management system, I can develop a satisfactory web
+            experience that will surpass expectations.
+          </p>
+        </div>
+        <!-- End of service -->
+
+        <div class="service">
+          <h3>Graphics Design</h3>
+
+          <p>
+            I have extensive knowledge in a variety of development programs to
+            allow me to express my creative talent in designing and creating
+            graphics. This allows me to create a sense of identity and bring
+            cohesive visual experiences to those who need it.
+          </p>
+        </div>
+        <!-- End of service -->
+      </div>
+      <!-- End of services -->
+
+      <a class="btn" href="#work">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section-title section-title-about">Who I am</h2>
+      <p class="section-subtitle section-subtitle-about">
+        Web Design and Developer in Utah
+      </p>
+      <div class="about-me-body">
+        <p>
+          My name is Andrew Peterson, I am currently in the Utah Valley area. I
+          love traveling, meeting new people, and exploring the world. I have a
+          passion for all things web and technology related. This led me to
+          pursue a degree in something technology related and now I am a recent
+          Web Design and Development graduate from Utah Valley University
+          looking to put my skills to the test and expand them.
+        </p>
+        <p>
+          My interest in technology started when I was very young. My family
+          always enjoyed getting electronic gadgets and computers to tinker and
+          play with. My brothers and I would always get used computer components
+          and put them together in our own personal builds. Years later, I am
+          continuing this tradition and building computers, but this time, I am
+          not only putting components together, but I am also writing the
+          software that can be used on them.
+        </p>
+        <p>
+          Even though I always had a fascination with technology, I also enjoyed
+          teaching. Before being a web developer, I was an English Teacher for
+          second language learners. I really enjoyed my experiences teaching,
+          but after teaching around Asia for a few years, I met multiple
+          individuals that were working while they traveled. They were software
+          engineers and web developers. This sparked my interest to further
+          develop my passion for technology into a career. Leading me to Utah
+          Valley University’s Web Design and Development program. This program
+          fit me perfectly. I learned about web design and its principles,
+          development languages, frameworks, and libraries. I emphasized in the
+          development side, because I believe being a full-stack developer is
+          much more marketable than one focused on front-end.
+        </p>
+        <p>
+          Currently, I am working as a level 1 software engineer continuing to
+          further develop my skills in hopes to one day become a senior engineer
+          and create amazing applications and experiences for users and
+          customers. I look forward to what the future has in store for me and
+          for what exciting technologies will come.
+        </p>
+      </div>
+
+      <img
+        src="/images/andrew2.jpg"
+        alt="A picture of Andrew Peterson"
+        class="about-me-img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section-title-work">My Work</h2>
+      <p class="section-subtitle-work">
+        A few of my web projects made with various frameworks and CMSs
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 1 -->
         <a
-          href="https://facebook.com/freecodecamp"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-facebook-square"></i> Facebook</a
+          href="https://cozy-crumble-ff1ce8.netlify.app/"
+          class="portfolio-item portfolio-item-img"
         >
-        <a id="profile-link"
-          href="https://github.com/andrew-peterson0429"
-          target="_blank"
-          class="btn contact-details"
+          <img
+            src="/images/react.png"
+            alt="Andrew Peterson's project"
+            class="portfolio-img"
+          />
+          <h4 class="portfolio-item-h4">Travelers Social</h4>
+          <p class="portfolio-item-p">Project made with React</p>
+        </a>
+
+        <!-- Portfolio item 2 -->
+        <a
+          href="https://francisdavismillet.org/"
+          class="portfolio-item portfolio-item-img"
         >
-          <i class="fab fa-github">GitHub</i
-        ></a>
-        <a id="profile-link"
-          href="https://twitter.com/AandMtravellers"
-          target="_blank"
-          class="btn contact-details"
+          <img
+            src="/images/wordpress.png"
+            alt="Andrew Peterson's project"
+            class="portfolio-img"
+          />
+          <h4 class="portfolio-item-h4">Francis Davis Millet History Site</h4>
+          <p class="portfolio-item-p">Project made with WordPress</p>
+        </a>
+
+        <!-- Portfolio item 3 -->
+        <a
+          href="https://andrew-sveltekit-app.vercel.app/"
+          class="portfolio-item portfolio-item-img"
         >
-          <i class="fab fa-twitter">Twitter</i
-        ></a>
-        <a id="profile-link"
-          href="mailto:example@example.com"
-          target="_blank"
-          class="btn contact-details"
+          <img
+            src="/images/svelte.png"
+            alt="Andrew Peterson's project"
+            class="portfolio-img"
+          />
+          <h4 class="portfolio-item-h4">Memescape</h4>
+          <p class="portfolio-item-p">Project made with Svelte</p>
+        </a>
+
+        <!-- Portfolio item 4 -->
+        <a
+          href="https://www.luxfinancial.io/"
+          class="portfolio-item portfolio-item-img"
         >
-          <i class="fas fa-at">Send an email</i
-        ></a>
-        <a id="profile-link"
-          href="tel:555-867-5309"
-          target="_blank"
-          class="btn contact-details"
-        >
-          <i class="fas fa-mobile-alt"> Call Me</i
-        ></a>
+          <img
+            src="/images/qwik.png"
+            alt="Andrew Peterson's project"
+            class="portfolio-img"
+          />
+          <h4 class="portfolio-item-h4">Lux Financial</h4>
+          <p class="portfolio-item-p">Project made with Qwik and Webflow</p>
+        </a>
       </div>
     </section>
+
+    <!-- My articles -->
+    <section>
+      <div class="article-title">
+        <h2 class="section-title-work">My Articles</h2>
+        <p class="section-subtitle-work">Some articles I wrote</p>
+      </div>
+
+      <div class="articles">
+        <div class="article-item">
+          <a href="/importance-of-design.html">
+            <img
+              src="/images/web-design.jpg"
+              alt="Computer showing web design"
+              class="article-img"
+            />
+          </a>
+          <h3 class="margin-top-1">The Importance of Designs in Websites</h3>
+          <p>
+            It is equally important to have suitable content on the site, as
+            well as its visual appearance being pleasing and functioning as a
+            user would expect.
+          </p>
+          <div class="article-img-name-date">
+            <div class="align-self-center">
+              <img
+                src="/images/andrew3.jpg"
+                alt="A picture of Andrew"
+                class="article-by-img"
+              />
+            </div>
+            <div class="article-by-text align-self-center">
+              <p class="no-margin">Andrew Peterson</p>
+              <p class="no-margin">May 20th, 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <a href="/importance-of-brand-identity.html">
+            <img
+              src="/images/brand-identity.jpg"
+              alt="Computer showing web design"
+              class="article-img"
+            />
+          </a>
+          <h3 class="margin-top-1">The Importance of Brand Identity</h3>
+          <p>
+            Having a strong brand identity is crucial for any business that
+            wants to succeed on the internet.
+          </p>
+          <div class="article-img-name-date">
+            <div class="align-self-center">
+              <img
+                src="/images/andrew3.jpg"
+                alt="A picture of Andrew"
+                class="article-by-img"
+              />
+            </div>
+            <div class="article-by-text align-self-center">
+              <p class="no-margin">Andrew Peterson</p>
+              <p class="no-margin">Mar 28th, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:andrew0429peterson@gmail.com" class="footer-link"
+        >andrew0429peterson@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a
+            href="https://github.com/andrew-peterson0429"
+            class="social-list-link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a
+            href="https://www.linkedin.com/in/andrew-peterson-425944265/"
+            class="social-list-link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- <li class="social-list-item">
+                <a href="#twitter" class="social-list-link">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li class="social-list-item">
+                <a href="#notsure" class="social-list-link">
+                    <i class="fab fa-tumblr-square"></i>
+                </a>
+            </li> -->
+      </ul>
+    </footer>
+
+    <script src="/js/index.js"></script>
   </body>
 </html>
